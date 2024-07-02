@@ -7,13 +7,20 @@ import Login from "./components/Login"
 import "./App.css"
 
 const App = () => {
+  const navLinkStyle = ({ isActive }) => {
+    return {
+      textDecoration: 'none',
+      fontWeight: isActive ? 'bold' : '',
+    }
+  }
+
   return (
     <>
       <nav>
-        <NavLink to="/" >Home</NavLink>
-        <NavLink to="/about" >About</NavLink>
-        <NavLink to="/profile">Profile</NavLink>
-        <NavLink to="/login">Login</NavLink>
+        <NavLink style={navLinkStyle} to="/" >Home</NavLink>
+        <NavLink style={navLinkStyle} to="/about" >About</NavLink>
+        <NavLink style={navLinkStyle} to="/profile">Profile</NavLink>
+        <NavLink style={navLinkStyle} to="/login">Login</NavLink>
       </nav>
       
       <Routes>
