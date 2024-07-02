@@ -17,8 +17,8 @@ const App = () => {
   return (
     <>
       <nav>
-        <NavLink style={navLinkStyle} to="/" >Home</NavLink>
-        <NavLink style={navLinkStyle} to="/about" >About</NavLink>
+        <NavLink style={navLinkStyle} to="/">Home</NavLink>
+        <NavLink style={navLinkStyle} to="/about">About</NavLink>
         <NavLink style={navLinkStyle} to="/profile">Profile</NavLink>
         <NavLink style={navLinkStyle} to="/login">Login</NavLink>
       </nav>
